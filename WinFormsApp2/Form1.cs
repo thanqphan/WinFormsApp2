@@ -6,5 +6,15 @@ namespace WinFormsApp2
         {
             InitializeComponent();
         }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            if (txtusername.Text.ToString() == "admin" && txtPassword.Text.ToString() == "admin")
+            {
+                frmMain frmMain = new frmMain();
+                frmMain.ShowDialog();
+                this.Close();
+            }
+        }
     }
 }
