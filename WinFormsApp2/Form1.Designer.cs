@@ -30,14 +30,15 @@
         {
             lbusername = new Label();
             txtusername = new TextBox();
-            txtMatKhau = new TextBox();
+            txtPassword = new TextBox();
             label1 = new Label();
+            btnlogin = new Button();
             SuspendLayout();
             // 
             // lbusername
             // 
             lbusername.AutoSize = true;
-            lbusername.Location = new Point(46, 53);
+            lbusername.Location = new Point(46, 56);
             lbusername.Name = "lbusername";
             lbusername.Size = new Size(73, 20);
             lbusername.TabIndex = 0;
@@ -45,33 +46,43 @@
             // 
             // txtusername
             // 
-            txtusername.Location = new Point(149, 53);
+            txtusername.Location = new Point(149, 56);
             txtusername.Name = "txtusername";
-            txtusername.Size = new Size(125, 26);
+            txtusername.Size = new Size(125, 27);
             txtusername.TabIndex = 1;
             // 
-            // txtMatKhau
+            // txtPassword
             // 
-            txtMatKhau.Location = new Point(149, 127);
-            txtMatKhau.Name = "txtMatKhau";
-            txtMatKhau.Size = new Size(125, 26);
-            txtMatKhau.TabIndex = 3;
+            txtPassword.Location = new Point(149, 134);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(125, 27);
+            txtPassword.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(46, 127);
+            label1.Location = new Point(46, 134);
             label1.Name = "label1";
             label1.Size = new Size(70, 20);
             label1.TabIndex = 2;
-            label1.Text = "Mật khẩu";
+            label1.Text = "Password";
+            // 
+            // btnlogin
+            // 
+            btnlogin.Location = new Point(149, 199);
+            btnlogin.Name = "btnlogin";
+            btnlogin.Size = new Size(94, 29);
+            btnlogin.TabIndex = 4;
+            btnlogin.Text = "login";
+            btnlogin.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(447, 280);
-            Controls.Add(txtMatKhau);
+            ClientSize = new Size(447, 295);
+            Controls.Add(btnlogin);
+            Controls.Add(txtPassword);
             Controls.Add(label1);
             Controls.Add(txtusername);
             Controls.Add(lbusername);
@@ -85,7 +96,8 @@
 
         private Label lbusername;
         private TextBox txtusername;
-        private TextBox txtMatKhau;
+        private TextBox txtPassword;
         private Label label1;
+        private Button btnlogin;
     }
 }
