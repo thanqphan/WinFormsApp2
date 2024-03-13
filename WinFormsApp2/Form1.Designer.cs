@@ -30,61 +30,29 @@
         {
             lbusername = new Label();
             txtusername = new TextBox();
-            txtPassword = new TextBox();
-            label1 = new Label();
-            btnlogin = new Button();
             SuspendLayout();
             // 
             // lbusername
             // 
             lbusername.AutoSize = true;
-            lbusername.Location = new Point(33, 56);
+            lbusername.Location = new Point(46, 56);
             lbusername.Name = "lbusername";
-            lbusername.Size = new Size(110, 20);
+            lbusername.Size = new Size(73, 20);
             lbusername.TabIndex = 0;
-            lbusername.Text = "Tên đăng nhập:";
+            lbusername.Text = "username";
             // 
             // txtusername
             // 
-            txtusername.Location = new Point(149, 53);
+            txtusername.Location = new Point(149, 56);
             txtusername.Name = "txtusername";
-            txtusername.Size = new Size(125, 26);
+            txtusername.Size = new Size(125, 27);
             txtusername.TabIndex = 1;
-            // 
-            // txtPassword
-            // 
-            txtPassword.Location = new Point(149, 127);
-            txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(125, 26);
-            txtPassword.TabIndex = 3;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(70, 127);
-            label1.Name = "label1";
-            label1.Size = new Size(73, 20);
-            label1.TabIndex = 2;
-            label1.Text = "Mật khẩu:";
-            // 
-            // btnlogin
-            // 
-            btnlogin.Location = new Point(149, 189);
-            btnlogin.Name = "btnlogin";
-            btnlogin.Size = new Size(94, 28);
-            btnlogin.TabIndex = 4;
-            btnlogin.Text = "Đăng nhập";
-            btnlogin.UseVisualStyleBackColor = true;
-            btnlogin.Click += btnlogin_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(447, 280);
-            Controls.Add(btnlogin);
-            Controls.Add(txtPassword);
-            Controls.Add(label1);
+            ClientSize = new Size(800, 450);
             Controls.Add(txtusername);
             Controls.Add(lbusername);
             Name = "Form1";
@@ -97,8 +65,5 @@
 
         private Label lbusername;
         private TextBox txtusername;
-        private TextBox txtPassword;
-        private Label label1;
-        private Button btnlogin;
     }
 }
